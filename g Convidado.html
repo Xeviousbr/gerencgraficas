@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Representante da Gráfica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ecf0f1;
+        }
+        .invitation-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #3498db;
+        }
+        .google-button {
+            background-color: #db4437;
+        }
+        .google-button:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <div class="header">Convite para Loja Renner</div>
+        <p>Você foi convidado para representar a <strong>Loja Renner 1 - São Paulo</strong>.</p>
+        <div class="form-group">
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+        </div>
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirmar Senha</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha">
+        </div>
+        <div class="button-container">
+            <button>Registrar</button>
+        </div>
+        <div class="button-container">
+            <button class="google-button">Registrar com Google</button>
+        </div>
+    </div>
+</body>
+</html>

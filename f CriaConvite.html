@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Convite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <a href="#">Início</a>
+        <a href="#">Gerenciar Lojas</a>
+        <a href="#">Gerenciar Gráficas</a>
+        <a href="#">Criar Convite</a>
+        <a href="#">Iniciar Campanha</a>
+    </div>
+    <div class="main-content">
+        <div class="header">Criação de Convite</div>
+        <div class="form-group">
+            <label for="storeName">Nome da Loja</label>
+            <input type="text" id="storeName" name="storeName" placeholder="Digite o nome da loja">
+        </div>
+        <div class="form-group">
+            <label for="city">Cidade</label>
+            <input type="text" id="city" name="city" placeholder="Digite a cidade">
+        </div>
+        <div class="form-group">
+            <label for="representativeEmail">E-mail do Representante</label>
+            <input type="email" id="representativeEmail" name="representativeEmail" placeholder="Digite o e-mail do representante">
+        </div>
+        <div class="form-group">
+            <label for="invitationMessage">Mensagem de Convite</label>
+            <textarea id="invitationMessage" name="invitationMessage" rows="4" placeholder="Digite a mensagem de convite"></textarea>
+        </div>
+        <div class="button-container">
+            <button>Enviar Convite</button>
+            <button>Limpar Formulário</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de Campanha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .actions select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .actions button {
+            padding: 5px 10px;
+            margin-left: 10px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard do Representante</h2>
+        <a href="#">Início</a>
+        <a href="#">Atualizar Status da Campanha</a>
+        <a href="#">Ver Campanhas</a>
+    </div>
+    <div class="main-content">
+        <div class="header">Atualização de Status da Campanha</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Campanha</th>
+                    <th>Loja</th>
+                    <th>Cidade</th>
+                    <th>Status Atual</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Campanha Verão</td>
+                    <td>Loja Renner 1</td>
+                    <td>São Paulo</td>
+                    <td>Em Andamento</td>
+                    <td class="actions">
+                        <select>
+                            <option value="em_andamento">Em Andamento</option>
+                            <option value="concluida">Concluída</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                        <button>Salvar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Campanha Inverno</td>
+                    <td>Loja Renner 2</td>
+                    <td>Rio de Janeiro</td>
+                    <td>Concluída</td>
+                    <td class="actions">
+                        <select>
+                            <option value="em_andamento">Em Andamento</option>
+                            <option value="concluida">Concluída</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                        <button>Salvar</button>
+                    </td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
